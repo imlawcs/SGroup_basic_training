@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-container {
+    border: 1px solid black;
+    padding: 0;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-end;
+    
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.item {
+    width: 100%;
+    height: 30px;
+    padding: 3px 10px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+.item1 {
+    background-color: yellow;
+}
+
+.item2 {
+    background-color: brown;
+}
+
+.item3 {
+    background-color: aqua;
+}
+
+.item4 {
+    background-color: blueviolet;
+}
+
+.item5 {
+    background-color: cornsilk;
+}
