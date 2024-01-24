@@ -317,7 +317,7 @@ body {
     margin-bottom: 20px;
 }
 
-.experience-list ul li:before {
+.experience-list ul li::before {
     content: "";
     position: absolute;
     left: 0;
