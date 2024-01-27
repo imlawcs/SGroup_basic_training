@@ -1,0 +1,221 @@
+body {
+    background: #2f3238;
+    color: #fff;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.content {
+    margin: 0 50px;
+    max-width: 1000px;
+}
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    min-height: 370px;
+}
+
+/* Common style */
+.container figure {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	max-width: 480px;
+	max-height: 360px;
+	text-align: center;
+}
+
+.container figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+
+.container figure section {
+	padding: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+    box-sizing: border-box;
+}
+
+.container figure section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container figure h2 {
+	font-weight: 300;
+}
+
+.container figure h2 span {
+	font-weight: 800;
+}
+
+.container figure h2, .container figure p {
+	margin: 0;
+}
+
+.container figure p {
+	letter-spacing: 1px;
+	font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Sadie */
+
+.Sadie-effect .Sadie-caption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	transform: translate(0, 50%);
+}
+
+.Sadie-effect h2 {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	width: 100%;
+	color: #484c61;
+	transition: 0.4s;
+    transform: translate(0, 40px);
+}
+
+.Sadie-effect .Sadie-caption::before, .Sadie-effect p {
+	transition: 0.4s;
+}
+
+.Sadie-effect p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+	width: 100%;
+	opacity: 0;
+	transform: translate(0, 10px);
+}
+
+.Sadie-effect:hover h2 {
+	color: #fff;
+	transform: translate(0);
+}
+
+.Sadie-effect:hover .Sadie-caption::before, .Sadie-effect:hover p {
+	opacity: 1;
+	transform: translate(0);
+}
+
+/* Marley */
+
+.Marley-effect section {
+	text-align: right;
+}
+
+.Marley-effect h2, .Marley-effect p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+.Marley-effect p {
+	bottom: 30px;
+	line-height: 1.5;
+	transform: translate(0, 100%);
+}
+
+.Marley-effect h2 {
+	top: 40px;
+	transition: 0.4s;
+	transform: translate(0, 20px);
+}
+
+.Marley-effect:hover h2 {
+	transform: translate(0);
+}
+
+.Marley-effect h2::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	transform: translate(0,40px);
+}
+
+.Marley-effect h2::after, .Marley-effect p {
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.Marley-effect:hover h2::after, .Marley-effect:hover p {
+	opacity: 1;
+	transform: translate(0);
+}
+
+/* Sarah */
+
+.Sarah-effect {
+	background: #42b078;
+}
+
+.Sarah-effect img {
+	max-width: none;
+	width: 500px;
+	transition: 0.4s;
+	transform: translate(-10px);
+}
+
+.Sarah-effect:hover img {
+	opacity: 0.4;
+	transform: translate(0);
+}
+
+.Sarah-effect section {
+	text-align: left;
+}
+
+.Sarah-effect h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.Sarah-effect h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	transition: 0.4s;
+	transform: translate(-100%);
+}
+
+.Sarah-effect:hover h2::after {
+	transform: translate(0);
+}
+
+.Sarah-effect p {
+	padding: 15px 0;
+	opacity: 0;
+	transition: 0.4s;
+	transform: translate(100%);
+}
+
+.Sarah-effect:hover p {
+	opacity: 1;
+	transform: translate(0);
+}
