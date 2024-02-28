@@ -151,7 +151,6 @@ var reverse = function(x) {
     var num = x;
     while (num !== 0) {
       res = (res * 10) + (num % 10);
-      console.log(res);
       num = num > 0 ? Math.floor(num / 10) : Math.ceil(num / 10);
       if (res > INT_MAX || res < INT_MIN) return 0;
     }
