@@ -23,7 +23,7 @@
             .then(data => {
                 console.log(data);
                 element.innerText = data.name;
-                element2.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                element2.src = data.sprites.front_default;
             })
                 element2.style.display = 'inline-block';
         }, 3000)
